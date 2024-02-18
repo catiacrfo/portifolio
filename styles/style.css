@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+    --cor-primaria: #F0DBAF;
+    --cor-secundaria: #B06161;
+    --cor-terciaria: #7ED7C1;
+    --cor-hover: #DC8686;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -19,6 +19,7 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
+
 .cabecalho{
     padding: 2% 0% 0% 15%;
 }
@@ -76,7 +77,7 @@ body{
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 60%;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -85,17 +86,16 @@ body{
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cor-hover);
 }
-
 .apresentacao__imagem{
     width: 50%;
 }
-
 .rodape{
-    color: var(--cor-primaria);
+    color: #B06161;
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
@@ -104,25 +104,27 @@ body{
     font-weight: 400;
 }
 
+ border-color: cyan;
+    color: var(--cor-terciaria);
+}
+
+a:visited {
+ border-color: cyan;
+    color: var(--cor-terciaria);
+}
+
 @media (max-width: 1200px) {
-    .cabecalho { 
-        padding:10%;
+    .cabecalho{
+         padding: 10%;  
     }
-    .cabecalho__menu {
+    .cabecalho__menu{
         justify-content: center;
-    }    
-    .apresentacao {
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
         padding: 5%;
     }
     .apresentacao__conteudo{
         width: auto;
     }
-    body{
-        background-color: #272727;
-    }
-
-    .apresentacao {
-        flex-direction: column-reverse;
-    }
-
 }
